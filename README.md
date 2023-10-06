@@ -12,6 +12,7 @@ This project implements the Skip-gram word embedding model using PyTorch. The Sk
 - [Word Vector Initialization](#word)
 - [Training](#training)
 - [Word Embeddings](#visualizing-word-embeddings)
+- [Single Value Decomposition](#svd)
 
 
 ## Installation
@@ -32,5 +33,5 @@ Each word in the vocabulary is initialized with a unique vector representation. 
 ## Training
 The skip-gram model is trained using a neural network. Given a target word, the model tries to maximize the probability of the surrounding context words appearing within a certain window. This is done using techniques like stochastic gradient descent.
 
-## Word Embeddings
-After training, the word vectors serve as embeddings for words. These embeddings can be used in various downstream NLP tasks, such as sentiment analysis, machine translation, and document classification. The vectors capture semantic relationships, allowing you to perform operations like word similarity and analogy.
+## Single Value Decomposition
+Single Value Decomposition (SVD) is a fundamental mathematical technique used in linear algebra and data analysis. It is a way to factorize a matrix into three other matrices, providing insights into the structure and properties of the original matrix. SVD has applications in various fields, including data compression, dimensionality reduction, recommendation systems, and image processing.
