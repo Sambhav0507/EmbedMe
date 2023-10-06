@@ -7,30 +7,30 @@ This project implements the Skip-gram word embedding model using PyTorch. The Sk
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
-- [Preprocessing](#preprocessing)
+- [Skip Gram model](##Skipgrammodel)
+- [Word Context](#preprocessing)
+- [Word Vector Training][#wordvectraining]
 - [Training](#training)
-- [Visualizing Word Embeddings](#visualizing-word-embeddings)
+- [Word Embeddings](#visualizing-word-embeddings)
 
 
 ## Installation
 
 To use this project, you need to have Python and PyTorch installed on your system. You can install PyTorch by following the instructions on the [official PyTorch website](https://pytorch.org/).
 
-Clone this repository to your local machine:
+## Skip gram model
 
-``` bash
-   git clone https://github.com/yourusername/skip-gram-pytorch.git
-```
+The skip-gram model is a popular neural network-based technique used in natural language processing (NLP) and word embedding tasks. It is a part of the word2vec family of algorithms developed by Tomas Mikolov and his team at Google. The skip-gram model is specifically designed to learn word embeddings, which are vector representations of words that capture semantic and syntactic relationships between words in a text corpus
 
-## Usage
 
-## Preprocessing
+## Word Context
+The central idea of the skip-gram model is to predict the context words (words that appear nearby) for a given target word within a specific window of text. The model takes a large corpus of text as input.
 
-Before training the Skip-gram model, you'll need to preprocess your text data. The preprocessing steps include tokenization, stop-word removal, and word stemming. Modify the preprocess function in the code to preprocess your corpus of text.
+## Word Vector Initialization
+Each word in the vocabulary is initialized with a unique vector representation. These vectors are typically initialized randomly or with small random values.
 
 ## Training
-Set the hyperparameters such as num_epochs and learning_rate before training the Skip-gram model. You can also adjust the embed_dims to control the dimensionality of word embeddings.
+The skip-gram model is trained using a neural network. Given a target word, the model tries to maximize the probability of the surrounding context words appearing within a certain window. This is done using techniques like stochastic gradient descent.
 
-## Visualizing Word Embeddings
-After training, you can visualize word embeddings using techniques like Singular Value Decomposition (SVD) and cosine similarity. Use the get_embeddings function to obtain word embeddings and calculate cosine similarity between words.
+## Word Embeddings
+After training, the word vectors serve as embeddings for words. These embeddings can be used in various downstream NLP tasks, such as sentiment analysis, machine translation, and document classification. The vectors capture semantic relationships, allowing you to perform operations like word similarity and analogy.
