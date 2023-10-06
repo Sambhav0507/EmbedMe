@@ -9,7 +9,7 @@ This project implements the Skip-gram word embedding model using PyTorch. The Sk
 - [Installation](#installation)
 - [Skip Gram model](##Skipgrammodel)
 - [Word Context](#preprocessing)
-- [Word Vector Training][#wordvectraining]
+- [Word Vector Initialization][#word]
 - [Training](#training)
 - [Word Embeddings](#visualizing-word-embeddings)
 
