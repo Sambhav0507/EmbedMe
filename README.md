@@ -27,7 +27,7 @@ The skip-gram model is a popular neural network-based technique used in natural 
 The central idea of the skip-gram model is to predict the context words (words that appear nearby) for a given target word within a specific window of text. The model takes a large corpus of text as input.
 
 ## Word Vector Initialization
-Each word in the vocabulary is initialized with a unique vector representation. These vectors are typically initialized randomly or with small random values.
+Each word in the vocabulary is initialized with a unique vector representation. These vectors are typically initialized randomly or with small random values. I have used one-hot encoding vectors for initialization
 
 ## Training
 The skip-gram model is trained using a neural network. Given a target word, the model tries to maximize the probability of the surrounding context words appearing within a certain window. This is done using techniques like stochastic gradient descent.
